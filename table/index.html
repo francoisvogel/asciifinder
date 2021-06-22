@@ -7,13 +7,13 @@
         <meta name="author" content="Francois Vogel">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ASCII Finder</title>
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./dynamicInput.js"></script>
+        <script src="./generateTable.js"></script>
+        <link rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="./style/style.css">
-        <link rel="stylesheet" href="./style.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script a sync src="https://www.googletagmanager.com/gtag/js?id=G-HL973KJTYR"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL973KJTYR"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -21,34 +21,13 @@
             gtag('config', 'G-HL973KJTYR');
         </script>
     </head>
-    <body>
+    <body onload="generateTable()">
         <header>
-            <a href="./" class="tag">Convert</a>
+            <a href="../" class="tag">Convert</a>
             <h1>ASCII Finder</h1>
-            <a href="./table/" class="tag">Table</a>
+            <a href="./" class="tag">Table</a>
         </header>
-        <div id="container">
-            <div class="box">
-                <h2>Convert a char to an int</h2>
-                <h3>Character:</h3>
-                <input type="text" id="character1">
-                <h3>Integer:</h3>
-                <input type="text" id="integer1">
-            </div>
-            <div class="box">
-                <h2>Convert an int to a char</h2>
-                <h3>Integer:</h3>
-                <input type="text" id="integer2">
-                <h3>Character:</h3>
-                <input type="text" id="character2">
-            </div>
-            <div class="box">
-                <h2>Convert a string to an array</h2>
-                <h3>String:</h3>
-                <input type="text" id="string1">
-                <h3>Integer Array:</h3>
-                <input type="text" id="array1">
-            </div>
+        <div id="tableContainer">
         </div>
         <footer>
             <a href="http://francoisvogel.io/privacy_policy.pdf">Privacy Policy</a>

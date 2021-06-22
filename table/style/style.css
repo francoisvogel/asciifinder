@@ -1,0 +1,24 @@
+#tableContainer {
+    height: max-content;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.number {
+    font-size: 15px;
+}
+
+.character {
+    font-size: 25px;
+}
+
+.box {
+    transition: 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.25);
+}
